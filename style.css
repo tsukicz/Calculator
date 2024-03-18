@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    width: auto;
+    height: auto;
+
+    background-image: url(img/pxfuel.jpg);
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.grid-container > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid rgb(214, 171, 191);
+    outline: none;
+    background-color: rgb(248, 217, 231);
+    color: rgb(221, 158, 177);
+}
+
+.grid-container > .operator {
+    background: rgb(161, 118, 145);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.grid-container > .output {
+    grid-column: 1 / -1; /* Ajustar o grid dando 1 linha inteira para o output */
+
+    background-color: rgb(214, 171, 191);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all; /* Não excede a div */
+}
+
+
+
+ 
