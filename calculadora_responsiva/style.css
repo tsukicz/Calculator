@@ -18,7 +18,7 @@ body {
 }
 
 :root {
-    --background-container: rgba(160, 56, 96, 0.5);
+    --background-container: rgba(196, 90, 131, 0.6);
     --color-number: rgb(250, 219, 227);
     --background-button: rgb(243, 174, 205);
     --background-operator: rgb(202, 96, 145);
